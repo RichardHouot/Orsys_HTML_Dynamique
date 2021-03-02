@@ -4,21 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon app</title>
+    <title>Mon app.js</title>
 </head>
 <body>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat soluta, necessitatibus in itaque vel ipsa sequi, <span style="color: red">spandolor corrupti atque autem modi</span> aliquam maiores debitis distinctio, enim ut totam et. <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque tempore earum eveniet assumenda</div>. Odit hic corrupti ad fugiat ratione reiciendis, voluptatum obcaecati itaque at deserunt! Placeat cum illum unde. Voluptate.
 
-
-<table border="1">
-    <tr><th>Line 1</th><td colspan="2">Data 1</td></tr>
-    <tr><th rowspan="2">Line 2 & 3</th><td>Data 2</td><td>Data 3</td></tr>
-    <tr><td>Data 4</td><td>Data 5</td></tr>
-</table>
-
-<img src="img/orsyslogo.png" alt="">
-<br/>
-Lien vers <a href="http://www.google.fr" target="blank">Google</a>
+<div id="main-content">
+    <div id="formulaire de saisie">
+    
+    <form action="" method="GET" name="mon-form">
+        <table>
+            <tr>
+                <td><label>Titre de la note</label></td>
+                <td><input type="text" name="form-titre" id="form-titre"></td>
+            </tr>
+            <tr>
+                <td><label for="form-auteur">Auteur</label></td>
+                <td>
+                    <select name="" id="form-auteur" id="form-auteur">
+                        <option value="0">Louise</option>
+                        <option value="1">Alex</option>
+                        <option value="2">Thomas</option>
+                        <option value="3">Cedric</option> 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="form-hour">Date&heure</label></td>
+                <td><input type="date" name="form-date" id="form-date"></td>
+            </tr>
+            <tr>
+                <td><label for="form-email">E-mail</label></td>
+                <td><input type="text" name="form-email" id="form-email"></td>
+            </tr>
+            <tr>
+                <td><label for="form-adresse">Adresse</label></td>
+                <td><input type="text" name="form-adresse" id="form-adresse" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="form-description">Description</label></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="description" id="form-description" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Clear"></td>
+                <td><button type="submit">Save <span style="color: red">Post-it</span></button></td>
+            </tr>
+        </table>      
+    </form>
+    </div>
+    <hr/>
+    <div id="post-it-liste">
+        <div class="post-it">un post-it</div>
+        <div class="post-it">un deuxième post-it</div>
+        <div class="post-it">un troisième post-it</div>
+        <div class="post-it">un quatrième post-it</div>
+        <div class="post-it">un cinquième post-it</div>
+    </div>
+</div>
 
 </body>
+
 </html>

@@ -7,53 +7,54 @@
     <title>Mon app.js</title>
 </head>
 <body>
+    <div id="jsloaded" style="background-color: red;color: white;text-align: center;">le fichier JS de l'app n'est pas chargé</div>
 
-<div id="main-content">
-    <div id="formulaire de saisie">
+    <div id="main-content">
+        <div id="formulaire de saisie">
     
-    <form action="" method="GET" name="mon-form">
-        <table>
-            <tr>
-                <td><label>Titre de la note</label></td>
-                <td><input type="text" name="form-titre" id="form-titre"></td>
-            </tr>
-            <tr>
-                <td><label for="form-auteur">Auteur</label></td>
-                <td>
-                    <select name="" id="form-auteur" id="form-auteur">
-                        <option value="0">Louise</option>
-                        <option value="1">Alex</option>
-                        <option value="2">Thomas</option>
-                        <option value="3">Cedric</option> 
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="form-hour">Date&heure</label></td>
-                <td><input type="date" name="form-date" id="form-date"></td>
-            </tr>
-            <tr>
-                <td><label for="form-email">E-mail</label></td>
-                <td><input type="text" name="form-email" id="form-email"></td>
-            </tr>
-            <tr>
-                <td><label for="form-adresse">Adresse</label></td>
-                <td><input type="text" name="form-adresse" id="form-adresse" ></td>
-            </tr>
-            <tr>
-                <td colspan="2"><label for="form-description">Description</label></td>
-            </tr>
-            <tr>
-                <td colspan="2">
+        <form action="" method="GET" name="mon-form">
+            <table>
+                <tr>
+                    <td><label>Titre de la note</label></td>
+                    <td><input type="text" name="form-titre" id="form-titre"></td>
+                </tr>
+                <tr>
+                    <td><label for="form-auteur">Auteur</label></td>
+                    <td>
+                        <select name="" id="form-auteur" id="form-auteur">
+                            <option value="0">Louise</option>
+                            <option value="1">Alex</option>
+                            <option value="2">Thomas</option>
+                            <option value="3">Cedric</option> 
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="form-hour">Date&heure</label></td>
+                    <td><input type="date" name="form-date" id="form-date"></td>
+                </tr>
+                <tr>
+                    <td><label for="form-email">E-mail</label></td>
+                    <td><input type="text" name="form-email" id="form-email"></td>
+                </tr>
+                <tr>
+                    <td><label for="form-adresse">Adresse</label></td>
+                    <td><input type="text" name="form-adresse" id="form-adresse" ></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="form-description">Description</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
                     <textarea name="description" id="form-description" cols="30" rows="10"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="reset" value="Clear"></td>
-                <td><button type="submit">Save <span style="color: red">Post-it</span></button></td>
-            </tr>
-        </table>      
-    </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Clear"></td>
+                    <td><button type="submit">Save <span style="color: red">Post-it</span></button></td>
+                </tr>
+            </table>      
+        </form>
     </div>
     <hr/>
     <div id="post-it-liste">

@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon app.js</title>
+    <link rel="stylesheet" href="styles/styles.css"/>
 </head>
 <body>
-    <div id="jsloaded" style="background-color: red;color: white;text-align: center;">le fichier JS de l'app n'est pas chargé</div>
+    <div id="jsLoaded" style="background-color: red;color: white;text-align: center;">le fichier JS de l'app n'est pas chargé</div>
 
     <div id="main-content">
-        <div id="formulaire de saisie">
+        <div id="formulaire-de-saisie">
     
         <form action="" method="GET" name="mon-form">
             <table>
@@ -50,22 +51,28 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="reset" value="Clear"></td>
-                    <td><button type="submit">Save <span style="color: red">Post-it</span></button></td>
+                    <td><input class="btn btn-error" type="reset" value="Clear"></td>
+                    <td class="align-right"><button class="btn btn-success" type="submit">Save <span style="color: red">Post-it</span></button></td>
                 </tr>
             </table>      
         </form>
     </div>
     <hr/>
     <div id="post-it-liste">
-        <div class="post-it">un post-it</div>
-        <div class="post-it">un deuxième post-it</div>
-        <div class="post-it">un troisième post-it</div>
-        <div class="post-it">un quatrième post-it</div>
-        <div class="post-it">un cinquième post-it</div>
+        <div class="post-it">
+            <div class="container-close-img"><img src="img/close.png" alt="close"></div>
+            <h2 class="center titre">Titre de la note</h2>
+            <div class="center post-it-date">03-mars-2021</div>
+            <div class="center mail">jsddksq@gmail.fr</div>
+            <div class="center post-it-adresse">l'adresse ici :... </div>
+            <br/>
+            <div class="post-it-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor a officia magnam reiciendis aliquid excepturi maxime beatae corporis quam quidem molestiae nulla officiis temporibus minus doloribus, accusamus, nostrum recusandae?</div>
+        </div>
+
     </div>
 </div>
 
+<script src="js/index.js"></script>
 </body>
 
 </html>
